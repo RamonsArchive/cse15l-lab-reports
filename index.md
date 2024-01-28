@@ -14,7 +14,7 @@ Hello. Welcome to my blog. My name is Ramon and I am a first year at Muir colleg
    
    The working directory for this command was `/home`. I got this output of lecture1 because the ls command lists all that's in the           directory which in this case is `lecture1`. This output is not an error because it printed out the contents of the current directory as expected.
 
-   ![Image](catsNoArguments2.png)
+   ![Image](catNoArguments2.png)
    
    The working directory for this command was `/home/lectrue1`. I got this output because the `cat` command is expecting the user to pass a file to print so by passing in pie and apple, it resorts to printing out my input. This output is not an error because it correctly and consistently prints out my input.
 
