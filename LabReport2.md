@@ -1,7 +1,7 @@
 Ramon McDargh-Mitchell
 PID: A17939555
 
-#Lab Report 2
+# Lab Report 2
 
 ## Part 1
 
@@ -23,8 +23,20 @@ PID: A17939555
 
 ## Part 2
 
-1. SSH private Key path
-   ![Image]
+1. SSH private Key absolute path
+   ![Image](privsshPath.png)
+
+2. SSH public key absolute path
+   ![Image](pubsshPath.png)
+
+3. Log into ieng6 without password
+   ![Image](login.png)
+
+## Part 3
+
+* One thing I've learned this week was that I can use the `curl` command to transfer data over into my web server. I also learned that the `man` command allows me to lookup the use of terminal commands. Lastly, I learned the command `scp` copies files between servers.  
+   
+   
 
 
 
