@@ -25,7 +25,7 @@ PID: A17939555
 
 1. SSH private Key absolute path
    
-   ![Image](pubsshPath.png)
+   ![Image](newprivPath.png)
 
 3. SSH public key absolute path
    
