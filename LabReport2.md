@@ -23,13 +23,13 @@ PID: A17939555
 
 ## Part 2
 
-1. SSH private Key absolute path
-   ![Image](privsshPath.png)
-
-2. SSH public key absolute path
+1. SSH private Key absolute path 
    ![Image](pubsshPath.png)
 
-3. Log into ieng6 without password
+2. SSH public key absolute path 
+   ![Image](privsshPath.png)
+
+4. Log into ieng6 without password
    ![Image](login.png)
 
 ## Part 3
