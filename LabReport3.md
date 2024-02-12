@@ -44,7 +44,7 @@ PID: A17939555
 
 ## Part 2
 
-* Example One: `find . `
+* Example One: `find .`
   This command lists all the files and directories in the current direcotry and in all the subdirectories.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find .
@@ -75,21 +75,21 @@ PID: A17939555
   biomed/./1471-2172-3-4.txt
   biomed/./gb-2002-4-1-r2.txt
   ```
-* Example Three: `find . -name "plos" `
+* Example Three: `find . -name "plos"`
   This command finds the file name passed from current directory which is plos.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -name "plos"
   ./plos
   ramonm.m@Ramons-MacBook-Pro technical %
   ```
-* Example Four: `find . -name "biomed" `
+* Example Four: `find . -name "biomed"`
   This command finds the file named passed from current directory which is biomed.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -name "biomed"
   ./biomed
   ramonm.m@Ramons-MacBook-Pro technical %
   ```
-* Example Five: `find . -type d `
+* Example Five: `find . -type d`
   This command finds all the directories recursively from the current directory.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -type d
@@ -119,7 +119,7 @@ PID: A17939555
   ./government/About_LSC/commission_report.txt
   ./government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
   ```
-* Example Seven: `find . -size -10k `
+* Example Seven: `find . -size -10k`
   This command finds all files smaller than 10 kilobytes recursively from current directory
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -size -10k
@@ -137,7 +137,7 @@ PID: A17939555
   ./government/Gen_Account_Office/og97023.txt
   ./government/Gen_Account_Office/d01121g.txt
   ```
-* Example Eight: `find . -size +10k `
+* Example Eight: `find . -size +10k`
   This command finds all files larger than 10 kilobytes recursively from current directory
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -size +10k 
