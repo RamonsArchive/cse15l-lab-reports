@@ -7,18 +7,21 @@ PID: A17939555
 ## Part One
 
 * Failure-Inducing Input:
+  
   ![Image](FailureInducingPoint.png)
   ```
   int[] input2 = {1,2,3,4,5};
   ArrayExamples.reverseInPlace(input2);
   ```
 * No Failure-Inducing Input:
+  
   ![Image](NoFailure.png)
   ```
   int[] input1 = { 3 };
   ArrayExamples.reverseInPlace(input1);
   ```
 * The Symptoms
+  
   ![Image](Symptoms.png)
 
 * The Bug Before and After
