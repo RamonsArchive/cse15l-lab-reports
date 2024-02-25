@@ -78,53 +78,44 @@ PID: A17939555
 
 ## Part 2
 
-* Example One: `find .`
-  This command lists all the files and directories in the current direcotry and in all the subdirectories.
+* Example One: `find . -mtime -7`
+  This command searches for files modified within the last seven days starting from current directory. This command is helpful in case 	  for determining if files were edited within seven days.
   ```
-  ramonm.m@Ramons-MacBook-Pro technical % find .
-  .
-  ./government
-  ./government/About_LSC
-  ./government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
-  ./government/About_LSC/Progress_report.txt
-  ./government/About_LSC/Strategic_report.txt
-  ./government/About_LSC/Comments_on_semiannual.txt
-  ./government/About_LSC/Special_report_to_congress.txt
-  ./government/About_LSC/CONFIG_STANDARDS.txt
-  ./government/About_LSC/commission_report.txt
-  ./government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
-  ./government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
-  ./government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt
+  ramonm.m@Ramons-MacBook-Pro technical % find . -mtime -7
+  ramonm.m@Ramons-MacBook-Pro technical % 
   ```
-* Example Two: `find biomed/.`
-  This command lists all the files and directories in the current directory and in all the subdirectories starting in `biomed/`
+* Example Two: `find biomed/ -mtime -300`
+  This command for files modified within the last seven days starting from `biomed/` directory. This command is useful because it can     give us an upper bound for how long ago files in this direcotry were modified.
   ```
-  ramonm.m@Ramons-MacBook-Pro technical % find biomed/.
-  biomed/.
-  biomed/./1472-6807-2-2.txt
-  biomed/./1471-2350-4-3.txt
-  biomed/./1471-2156-2-3.txt
-  biomed/./1471-2156-3-11.txt
-  biomed/./1471-2121-3-10.txt
-  biomed/./1471-2172-3-4.txt
-  biomed/./gb-2002-4-1-r2.txt
+  ramonm.m@Ramons-MacBook-Pro technical % find biomed/ -mtime -300
+  biomed/
+  biomed//1472-6807-2-2.txt
+  biomed//1471-2350-4-3.txt
+  biomed//1471-2156-2-3.txt
+  biomed//1471-2156-3-11.txt
+  biomed//1471-2121-3-10.txt
+  biomed//1471-2172-3-4.txt
+  biomed//gb-2002-4-1-r2.txt
+  biomed//gb-2003-4-6-r41.txt
+  biomed//1471-2466-1-1.txt
+  biomed//1471-2199-2-10.txt
   ```
 * Example Three: `find . -name "plos"`
-  This command finds the file name passed from current directory which is plos.
+  This command finds the file name passed from current directory which is plos. This is useful becuase it lets us locate files with 	  specifc names
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -name "plos"
   ./plos
   ramonm.m@Ramons-MacBook-Pro technical %
   ```
 * Example Four: `find . -name "biomed"`
-  This command finds the file named passed from current directory which is biomed.
+  This command finds the file named passed from current directory which is biomed. This command is useful because it too alows us to      find files with a certain name but instaed starting in the `biomed/` directory.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -name "biomed"
   ./biomed
   ramonm.m@Ramons-MacBook-Pro technical %
   ```
 * Example Five: `find . -type d`
-  This command finds all the directories recursively from the current directory.
+  This command finds all the directories recursively from the current directory. This file is useful because it lets us locate only       directorys.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -type d
   .
@@ -141,7 +132,7 @@ PID: A17939555
   ramonm.m@Ramons-MacBook-Pro technical %
   ```
 * Example Six: `find . -type f`
-  This command finds all the files recursively from the current directory
+  This command finds all the files recursively from the current directory. This command is helpful because it lets us find all files.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -type f
   ./government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
@@ -154,7 +145,7 @@ PID: A17939555
   ./government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
   ```
 * Example Seven: `find . -size -10k`
-  This command finds all files smaller than 10 kilobytes recursively from current directory
+  This command finds all files smaller than 10 kilobytes recursively from current directory. This command is useful becuase it lets us    filter out larger files.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -size -10k
   .
@@ -172,7 +163,7 @@ PID: A17939555
   ./government/Gen_Account_Office/d01121g.txt
   ```
 * Example Eight: `find . -size +10k`
-  This command finds all files larger than 10 kilobytes recursively from current directory
+  This command finds all files larger than 10 kilobytes recursively from current directory. This command is useful because it locates     all files bigger than a certain 10 kilobytes.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -size +10k 
   ./government/About_LSC/Progress_report.txt
