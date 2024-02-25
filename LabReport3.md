@@ -9,16 +9,47 @@ PID: A17939555
 * Failure-Inducing Input:
   
   ![Image](FailureInducingPoint.png)
+
+  Tester Code:
   ```
-  int[] input2 = {1,2,3,4,5};
-  ArrayExamples.reverseInPlace(input2);
+  @Test 
+	public void testReverseInPlace() {
+    int[] input2 = {1,2,3,4,5};
+
+    ArrayExamples.reversed(input2);
+    assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input2));
+
+	}
+  ```
+  Algorithim:
+  ```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
   ```
 * No Failure-Inducing Input:
   
   ![Image](NoFailure.png)
+
+  Tester Code:
   ```
-  int[] input1 = { 3 };
-  ArrayExamples.reverseInPlace(input1);
+  @Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+  
+    ArrayExamples.reversed(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+  ```
+  Algorithim:
+  ```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
   ```
 * The Symptoms
   
