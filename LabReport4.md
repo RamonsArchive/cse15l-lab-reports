@@ -19,6 +19,9 @@ Email: rmcdarghmitchell@ucsd.edu
 ![Image](step4.png)
 
 5. Step five: Keys pressed: `<up> <up> <up>`, `<up> <up> <up>`. The first three up presses was to reach command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` that was three up in my command history. The second three up was to reach command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` which was three up in my command history.
+![Image](step6(5).png)
+
+6. Step six: Keys pressed: `git add ListExamples.java`, `git commit -m "first commit"`, `git push origin main`. These three commands added my edited file to the repository, commited it, then pushed my changes.
 ![Image](step5.png)
 
 
