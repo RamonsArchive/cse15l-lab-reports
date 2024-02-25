@@ -101,14 +101,14 @@ PID: A17939555
   biomed//1471-2199-2-10.txt
   ```
 * Example Three: `find . -name "plos"`
-  This command finds the file name passed from current directory which is plos. This is useful becuase it lets us locate files with 	  specifc names
+  This command finds the file name passed from current directory which is `plos/`. This is useful becuase it lets us locate files with 	  specifc names
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -name "plos"
   ./plos
   ramonm.m@Ramons-MacBook-Pro technical %
   ```
 * Example Four: `find . -name "biomed"`
-  This command finds the file named passed from current directory which is biomed. This command is useful because it too alows us to      find files with a certain name but instaed starting in the `biomed/` directory.
+  This command finds the file named passed from current directory which is `biomed/`. This command is useful because it too alows us to      find files with a certain name but instaed starting in the `biomed/` directory.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -name "biomed"
   ./biomed
