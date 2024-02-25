@@ -115,7 +115,7 @@ PID: A17939555
   ramonm.m@Ramons-MacBook-Pro technical %
   ```
 * Example Five: `find . -type d`
-  This command finds all the directories recursively from the current directory. This file is useful because it lets us locate only       directorys.
+  This command finds all the directories recursively from the current directory. This command is useful because it lets us locate only       directorys.
   ```
   ramonm.m@Ramons-MacBook-Pro technical % find . -type d
   .
