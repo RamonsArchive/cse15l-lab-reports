@@ -6,15 +6,17 @@ Email: rmcdarghmitchell@ucsd.edu
 
 # Lab Report 5
 
-1. ![Image](originalPost.png)
+1.
+   ![Image](originalPost.png)
    Hey, I'm getting an IndexOutOfBoundsException when testing my merge method. The bug occurs at line 28 but I'm adding `arr2.get(index2)` to result and which is not at `index1` so I'm not sure what's the issue. Any help is much apprecaited. Thank you!
 
-2. Hey there, I don't have enough information to direclty fix your error. However, I suggest you run a debugger and compare `arr2.size()` to the value of `index2`. To run the debugger, run `javac -g -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and then run `jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore $1`. While in the jdb prompt, type `stop at Merge:28` where the error occurs and then type `run` to hit break point. When the break point is hit. Type `locals` to get all the local variables and then compare `index2` to `arr2.size()`. To get the size of the `arr2` and the value of `index2`, type `print arr2.size()` and `print index2`. Also look at the while loop condition to see if there is a conflict with getting the value from the array at the index when the while loop should have perhapes been terminated.  
+3. Hey there, I don't have enough information to direclty fix your error. However, I suggest you run a debugger and compare `arr2.size()` to the value of `index2`. To run the debugger, run `javac -g -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and then run `jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore $1`. While in the jdb prompt, type `stop at Merge:28` where the error occurs and then type `run` to hit break point. When the break point is hit. Type `locals` to get all the local variables and then compare `index2` to `arr2.size()`. To get the size of the `arr2` and the value of `index2`, type `print arr2.size()` and `print index2`. Also look at the while loop condition to see if there is a conflict with getting the value from the array at the index when the while loop should have perhapes been terminated.  
 
-3. ![Image](advice.png)
+4.
+   ![Image](advice.png)
    The bug is that in the while loop, the condition is `index2 < listOneSize` when it should be `index2 < listTwoSize`. Because the merge method already iterated through `arr2` and copied all values to the returned ArrayList, `index2` already equals the length of `arr2` which is 3. `listOneSize` is the length of `arr1` which is 4 meaning the condition runs resulting an IndexOutOfBoundsException error.
 
-4. All information releated to the setup
+6. All information releated to the setup
    * The absolute directory is `/Users/ramonm.m/Desktop/Year 1/CSE Classes/CSE 15L/Week 9 Lab Report 5`. The local path for all files are `Week 9 Lab Report 5/Merge.java`, `Week 9 Lab Report 5/Tester.java` and `bash.sh`.
    * Contents for `Merge.java`
      ```
